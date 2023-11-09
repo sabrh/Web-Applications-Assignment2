@@ -1,0 +1,108 @@
+/* ID 2022287 Sabrina Haque CSE309 Section 2 IUB */ 
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+    position: relative;
+    padding-bottom: 58px;
+    min-height: 100vh;
+}
+
+header{
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    background-image: url(../Assignment02WebApp/image2.jpeg);
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+}
+header h2{
+    position: absolute;
+    left: 40%;
+    top: 15%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+header img{
+    float: left;
+}
+nav ul{
+    float: right;
+    margin-right: 30px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block; /*if remove this nav links become vertical*/
+    transition: 0.8s all;
+}
+nav ul li:hover{
+    background-color: #7dbb92;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+}
+main {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 20px 10px;
+    
+}
+
+article {
+    background-color: beige;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+
+}
+article:last-child {
+    margin-bottom: 0;
+}
+article img {
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+}
+article h3 {
+    margin: 10px 0 25px 0;
+}
+article p {
+    margin-top: 16px;
+    line-height: 24px;
+}
+footer {
+    text-align: center;
+    background-color: gray;
+    color: black;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* position: fixed;
+    z-index: 1; */
+}
+footer a{
+    color: black;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+
+@media(max-width:768px) {
+    header { padding: 30px 20px; }
+    header p { font-size: 18px; }
+    main { width: 100vw; padding: 20px; }
+    article { margin-bottom: 16px; font-size: 14px; }
+    article h3 { margin: 10px 0 20px 0; }
+    article p { margin-top: 16px; line-height: 20px; }
+}
